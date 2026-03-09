@@ -1,59 +1,38 @@
-🌸 FlowerAura Review Sentiment Analysis
+# 🌸 FlowerAura (Customer Sentiment Analysis)
+End-to-end sentiment analysis project on FlowerAura product reviews. Scraped 400+ reviews, performed NLP preprocessing, and generated customer insights using Python.
 
-📌 Project Overview
-This project performs web scraping and sentiment analysis on customer reviews of a FlowerAura product. The goal is to analyze customer feedback, identify sentiment trends, and generate actionable business insights using Python and NLP techniques.
+## 📌 Project Overview
+This project is about understanding customer sentiment from products review. The goal was to understand how customers feel about a product, whether they are happy or unhappy, by processing their review data and classifying it as positive or negative.
 
-🎯 Objectives:
-1. Scrape 400+ customer reviews from FlowerAura.
-2. Clean and preprocess review text using NLP techniques.
-3. Perform sentiment analysis using TextBlob.
-4. Analyze rating vs sentiment correlation.
-5. Generate visual insights using data visualization.
+## 🎯 About the data:
+1. I scrapped almost 500 reviews from the FolwerAura website
+2. Each review conatined customer's name, city, occasion, rating and review text
 
-🛠️ Tools & Technologies Used:
-Python Libraries like-
-1. BeautifulSoup – Web scraping
-2. Requests – Fetching webpage content
-3. Pandas – Data cleaning & analysis
-4. NLTK – Text preprocessing
-5. TextBlob – Sentiment analysis
-6. Matplotlib & Seaborn – Visualization
-7. WordCloud – Word frequency analysis
+## 🛠️ Tool Used:
+The tool used here was Python and its Libraries like-
+1. Selenium & BeautifulSoup for Scrapping the data
+2. Pandas perform data manipulation like cleaning and preprocessing
+3. TextBlob for sentiment analysis
+4. Seaborn & Matplotlip for Data Visualization 
 
-📊 Dataset Description:
-The dataset contains-
-1. Reviewer Name
-2. City
-3. Occasion (if available)
-4. Posted Date
-5. Rating (1–5 stars)
-6. Review Text
-7. Total Reviews Collected: 490+
-
-🧹 Data Cleaning & Preprocessing:
+## 🧹 Data Cleaning & Preprocessing:
 1. Removed duplicate reviews
 2. Handled missing values
 3. Converted ratings to numeric format
-4. Converted text to lowercase
-5. Removed special characters and punctuation
-6. Removed stopwords
-7. Applied lemmatization
+4. Converted text to lowercase & more
 
-💬 Sentiment Analysis:
-1. Calculated polarity score using TextBlob
-2. Classified reviews as:
-3. Positive (Polarity ≥ 0.1)
-4. Negative (Polarity < 0.1)
-5. Analyzed sentiment distribution
-6. Compared average rating vs sentiment
+## 📈 Key Insights:
+1. 99% of reviews were positive with an average rating of 4.91 out of 5
+2. Birthday & Anniversary were the top selling occasions together accounting for 50% of the reviews 
+3. Banglore, Delhi and Hyderabad were the cities with most acyive customers.
+4. Positive reviews frequently mention words like “fresh”, “delivery”, and “quality”.
+5. Negative reviews highlight delivery delays or packaging issues.
 
-📈 Key Insights:
-1. Majority of reviews are positive.
-2. Higher ratings strongly correlate with positive sentiment.
-3. Positive reviews frequently mention words like “fresh”, “delivery”, and “quality”.
-4. Negative reviews highlight delivery delays or packaging issues.
+## 📌 Business Recommendations:
+1. FlowerAura should focus more on delivery reliability since that is where most negative reviews were concentrated
+2. They should run targeted markeing campaingns around birthdays and anniversaries since they are the strongest segment
+3. They should leverage 91% of five-star rating as social proof in ads and on product pages to drive conversions.
 
-📌 Business Recommendations:
-1. Focus marketing on product freshness and quality.
-2. Improve logistics efficiency to reduce delivery complaints.
-3. Highlight positive customer experiences in promotions.
+## 🤌 Challenges Faced
+The biggest challenge here was that Flipkart's system blocked my selenium scrapper, so i had to pivot to FlowerAura and i also had to deal with missing values, duplicates, data inconsistencies again.
+
